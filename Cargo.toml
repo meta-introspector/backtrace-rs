@@ -14,16 +14,16 @@ autoexamples = true
 autotests = true
 edition = "2024"
 exclude = ["/ci/"]
-rust-version = "1.88.0"
+# rust-version = "1.88.0"
 
-[workspace]
-members = ['crates/cpp_smoke_test', 'crates/as-if-std']
-exclude = [
-  'crates/without_debuginfo',
-  'crates/macos_frames_test',
-  'crates/line-tables-only',
-  'crates/debuglink',
-]
+#[workspace]
+#members = ['crates/cpp_smoke_test', 'crates/as-if-std']
+#exclude = [
+#  'crates/without_debuginfo',
+#  'crates/macos_frames_test',
+#  'crates/line-tables-only',
+#  'crates/debuglink',
+#]
 
 [dependencies]
 cfg-if = "1.0"
