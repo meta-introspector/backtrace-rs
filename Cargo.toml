@@ -48,7 +48,6 @@ libc = { version = "0.2.156", workspace=true }
 
 [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies.object]
 workspace=true # = "0.37.0"
-default-features = false
 features = ['read_core', 'elf', 'macho', 'pe', 'xcoff', 'unaligned', 'archive']
 
 [dev-dependencies]
